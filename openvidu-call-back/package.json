@@ -1,7 +1,7 @@
 {
     "author": "OpenVidu",
     "bugs": {
-        "url": "https://github.com/OpenVidu/openvidu-call/issues"
+        "url": "https://github.com/simbik/openvidu-call-custom/issues"
     },
     "dependencies": {
         "axios": "0.21.1",
@@ -28,7 +28,7 @@
         "webpack-cli": "3.3.11",
         "webpack-node-externals": "1.7.2"
     },
-    "homepage": "https://github.com/OpenVidu/openvidu-call#readme",
+    "homepage": "https://github.com/simbik/openvidu-call-custom#readme",
     "jest": {
         "coveragePathIgnorePatterns": [
             "/node_modules/"
@@ -45,7 +45,7 @@
     "name": "openvidu-call-server",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/OpenVidu/openvidu-call.git"
+        "url": "git+https://github.com/simbik/openvidu-call-custom.git"
     },
     "scripts": {
         "build": "webpack",

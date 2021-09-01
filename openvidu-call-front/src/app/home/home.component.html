@@ -1,16 +1,16 @@
 <div class="section1">
 	<mat-toolbar id="header">
-		<a href="https://openvidu.io/" target="_blank">
-			<img id="header_img" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />
+		<a href="/" target="_blank">
+			<img id="header_img" alt="Logo" src="assets/images/logo.svg" />
 		</a>
-		<div class="ovVersion">
+		<div class="ovVersion" style="display: none;">
 			<span>{{ version }}</span>
 		</div>
 	</mat-toolbar>
 	<div class="container">
 		<div class="ovInfo">
-			<img class="ovLogo" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />
-			<h4>Videoconference rooms in one click</h4>
+<!--			<img class="ovLogo" alt="OpenVidu Logo" src="assets/images/openvidu_logo.png" />-->
+			<h4>Join room</h4>
 		</div>
 		<div class="formContainer">
 			<div class="roomError" id="requiredNameError" *ngIf="roomForm.hasError('required')">
@@ -27,25 +27,4 @@
 			</form>
 		</div>
 	</div>
-
-
-	<mat-toolbar class="footer">
-		<span>
-			Photo by
-			<a
-				rel="noopener noreferrer"
-				target="_blank"
-				href="https://unsplash.com/@danielleone?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-			>
-				Daniel Leone
-			</a>
-			on
-			<a
-				href="https://unsplash.com/s/photos/mountain?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-				target="_blank"
-			>
-				Unsplash
-			</a></span
-		>
-	</mat-toolbar>
 </div>

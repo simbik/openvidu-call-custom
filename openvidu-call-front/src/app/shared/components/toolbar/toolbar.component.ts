@@ -36,7 +36,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 	isWebcamVideoEnabled: boolean;
 
 	fullscreenIcon = VideoFullscreenIcon.BIG;
-	logoUrl = 'assets/images/openvidu_logo.png';
+	logoUrl = 'assets/images/logo.svg';
 
 	participantsNames: string[] = [];
 
@@ -89,7 +89,7 @@ export class ToolbarComponent implements OnInit, OnDestroy {
 			this.isWebcamVideoEnabled = enabled;
 		});
 		if (this.lightTheme) {
-			this.logoUrl = 'assets/images/openvidu_logo_grey.png';
+			this.logoUrl = 'assets/images/logo_dark.svg';
 		}
 	}
 

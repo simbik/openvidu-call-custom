@@ -20,18 +20,18 @@ printf '\n'
 printf '\n     -------------------------------------------------------------'
 printf '\n       Installing OpenVidu Call with the following arguments:'
 printf '\n'
-printf '\n          Call container tag:  openvidu/openvidu-call:%s'  "${RELEASE_VERSION}"
-printf '\n          Demos container tag:  openvidu/openvidu-call-demos:%s'  "${RELEASE_VERSION}"
+printf '\n          Call container tag:  simbik/openvidu-call-custom:%s'  "${RELEASE_VERSION}"
+printf '\n          Demos container tag:  simbik/openvidu-call-custom-demos:%s'  "${RELEASE_VERSION}"
 printf '\n          Branch to build:  %s'  "${BRANCH_NAME}"
 printf '\n     -------------------------------------------------------------'
 printf '\n'
 
-docker build -f prod.dockerfile -t openvidu/openvidu-call:${RELEASE_VERSION} --build-arg BRANCH_NAME=${BRANCH_NAME} --build-arg BASE_HREF=${CALL_BASE_HREF} .
-docker build -f prod.dockerfile -t openvidu/openvidu-call:${RELEASE_VERSION}-demos --build-arg BRANCH_NAME=${BRANCH_NAME} --build-arg BASE_HREF=${DEMOS_BASE_HREF} .
+docker build -f prod.dockerfile -t simbik/openvidu-call-custom:${RELEASE_VERSION} --build-arg BRANCH_NAME=${BRANCH_NAME} --build-arg BASE_HREF=${CALL_BASE_HREF} .
+docker build -f prod.dockerfile -t simbik/openvidu-call-custom:${RELEASE_VERSION}-demos --build-arg BRANCH_NAME=${BRANCH_NAME} --build-arg BASE_HREF=${DEMOS_BASE_HREF} .
 
 printf '\n'
 printf '\n     Pushing containers to OpenVidu DockerHub'
 printf '\n'
 
-docker push openvidu/openvidu-call:${RELEASE_VERSION}
-docker push openvidu/openvidu-call:${RELEASE_VERSION}-demos
+docker push simbik/openvidu-call-custom:${RELEASE_VERSION}
+docker push simbik/openvidu-call-custom:${RELEASE_VERSION}-demos
